@@ -8,11 +8,12 @@
     position: relative;
     width: var(--menu-bar-width);
     height: var(--menu-bar-height);
-    margin: 100px;
+    /*margin: 100px; */
+    margin-top: 10px;
+    margin-left: -10px;
 }
 
-#menu::before,
-#menu::after {
+#menu::before, #menu::after {
     background-color: #D84282;
     display: block;
     content: "";
@@ -29,5 +30,34 @@
 #menu::after {
     left: 0;
     top: 20px;
+}
+
+.wrapper {
+    background-color: yellow;
+    border: black;
+    width: 40px;
+    height: 30px;
+    padding: 10px;
+    position: relative;
+    display: block;
+    margin: 150px auto 0 auto;
+}
+
+#menu:hover::before {
+    transform: rotate(-45deg);
+    top:0px;
+}
+
+#menu:hover::after {
+    transform: rotate(45deg);
+    top: 0px;
+}
+
+#menu:hover {
+    background-color: white;
+}
+
+.wrapper:hover {
+    background-color: white;
 }
 

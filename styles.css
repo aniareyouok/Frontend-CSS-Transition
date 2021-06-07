@@ -8,9 +8,8 @@
     position: relative;
     width: var(--menu-bar-width);
     height: var(--menu-bar-height);
-    /*margin: 100px; */
     margin-top: 25px;
-    /*! margin-left: -10px; */
+    transition: 2s ease-in-out;
 }
 
 #menu::before, #menu::after {
@@ -20,6 +19,7 @@
     width: var(--menu-bar-width);
     height: var(--menu-bar-height);
     position: absolute;
+    transition: 2s ease-in-out;
 }
 
 #menu::before {
@@ -45,21 +45,16 @@
 .wrapper:hover #menu::before {
     transform: rotate(-45deg);
     top:0;
-    transition: 2s ease-in-out;
+
 }
 
 .wrapper:hover #menu::after {
     transform: rotate(45deg);
     top: 0;
-    transition: 2s ease-in-out;
 }
 
 .wrapper:hover #menu {
     background-color: white;
-    transition: 2s ease-in-out;
 }
 
-.wrapper:hover {
-    background-color: white;
-}
 

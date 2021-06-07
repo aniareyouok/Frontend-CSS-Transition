@@ -45,16 +45,19 @@
 
 #menu:hover::before {
     transform: rotate(-45deg);
-    top:0px;
+    top:0;
+    transition: 2s ease-in-out;
 }
 
 #menu:hover::after {
     transform: rotate(45deg);
-    top: 0px;
+    top: 0;
+    transition: 2s ease-in-out;
 }
 
 #menu:hover {
     background-color: white;
+    transition: 2s ease-in-out;
 }
 
 .wrapper:hover {

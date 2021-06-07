@@ -43,19 +43,19 @@
     margin: 150px auto 0 auto;
 }
 
-#menu:hover::before {
+.wrapper:hover #menu::before {
     transform: rotate(-45deg);
     top:0;
     transition: 2s ease-in-out;
 }
 
-#menu:hover::after {
+.wrapper:hover #menu::after {
     transform: rotate(45deg);
     top: 0;
     transition: 2s ease-in-out;
 }
 
-#menu:hover {
+.wrapper:hover #menu {
     background-color: white;
     transition: 2s ease-in-out;
 }
